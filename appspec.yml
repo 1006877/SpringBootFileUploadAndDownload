@@ -5,6 +5,6 @@ files:
     destination: /webapp/myApp
 hooks:
   AfterInstall:
-    - location: deploy/start_server
+    - location: scripts/start_server
       timeout: 150
       runas: root
