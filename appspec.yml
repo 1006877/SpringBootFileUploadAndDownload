@@ -1,0 +1,10 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /webapp/myApp
+hooks:
+  AfterInstall:
+    - location: deploy/start_server
+      timeout: 150
+      runas: root
