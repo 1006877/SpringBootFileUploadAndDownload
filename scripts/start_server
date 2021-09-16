@@ -3,9 +3,6 @@
 cd /webapp/myApp/target
 pwd
 ls
-sudo amazon-linux-extras enable corretto8
-sudo yum clean metadata
-sudo yum install -y java-1.8.0-amazon-corretto
 chmod +rwx file-demo-0.0.1-SNAPSHOT.jar
 kill $(ps aux | grep 'file-demo-0.0.1-SNAPSHOT.jar' | grep -v grep | awk '{print $2}')
 java -Dserver.port=8080 -jar file-demo-0.0.1-SNAPSHOT.jar > /dev/null 2> /dev/null < /dev/null &
